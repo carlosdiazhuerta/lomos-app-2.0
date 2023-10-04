@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+section {
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 15%;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el header */
+.header {
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 20px; /* Añade espaciado alrededor del contenido */
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 10px; /* Espacio inferior para separar el título del botón */
+}
+
+.header button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8%;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: #45a049;
+}
+
+.container {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.div-img {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el modo nocturno */
+.modo-nocturno {
+  background-color: #333;
+  color: #fff;
+}
+
+.div-img img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  margin-bottom: 10px;
+}
+
+.div-img button {
+  background-color: #d8dfd8;
+  position: absolute;
+  bottom: 25px;
+  left: 85%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+#random-lomitos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#dogContainer {
+  display: block; /* Lo mostramos por defecto */
+}
+
+#random-lomitos button {
+  display: block;
+  margin: 0 auto;
+  background-color: #080000;
+}
+
+#favoritesDog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#favoritesDog .div-img {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+#favoritesDog div {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+#favoritesDog img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  margin: 5px;
+  padding: 30px;
+  margin-bottom: -20px;
+}
+
+#favoritesDog button {
+  display: block;
+  position: relative;
+  padding: 8px 10px;
+  font-size: 14px;
+  background-color: #dae1db;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transform: translateX(700%);
+  margin-top: -24%;
+}
+
+#favoritesDog button:hover {
+  background-color: #45a049;
+}
+
+#subelafotodeunlomito {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonup {
+  align-items: center;
+}
+
+/* Estilos para mensajes de error */
+#error {
+  color: #f44336;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Consulta de medios para pantallas más pequeñas (mínimo 320px de ancho) */
+@media screen and (max-width: 320px) {
+  .div-img {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+    left: 5%; /* Ajusta el valor según tus necesidades */
+    width: 90%; /* Ancho mínimo de 320px */
+  }
+
+  /* Ajusta los estilos específicos para pantallas más pequeñas aquí */
+  /* Por ejemplo, puedes reducir el tamaño de la fuente o ajustar márgenes */
+}
